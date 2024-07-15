@@ -48,14 +48,6 @@ body {
   display: flex;
 }
 
-.nav__link,
-.nav__logo,
-.home__title,
-.home__image,
-.home__button {
-  visibility: visible;
-}
-
 .nav__link {
   color: var(--clr-white);
   display: block;
@@ -152,4 +144,15 @@ body {
   padding-block: 1rem;
   padding-inline: 1.875rem;
   cursor: pointer;
+}
+
+/***************************************************/
+/* Pour animer l'apparition des éléments avec GSAP */
+/***************************************************/
+.nav__link,
+.nav__logo,
+.home__title,
+.home__image,
+.home__button {
+  visibility: hidden;
 }
