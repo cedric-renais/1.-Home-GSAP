@@ -100,7 +100,7 @@ body {
 }
 
 .home__content {
-  inline-size: 37.5rem;
+  max-inline-size: 37.5rem;
   margin-inline: auto;
   position: relative;
   top: 9.375rem;
@@ -155,4 +155,51 @@ body {
 .home__image,
 .home__button {
   visibility: hidden;
+}
+
+/***********************/
+/* Breakpoints : 768px */
+/***********************/
+@media screen and (max-width: 768px) {
+  .nav {
+    block-size: 3.5rem;
+  }
+
+  .nav__container {
+    max-inline-size: 80%;
+  }
+
+  .nav__link {
+    margin-inline: 0.5rem;
+  }
+
+  .nav__logo {
+    inline-size: 2.15rem;
+  }
+
+  .home__title {
+    font-size: 2.5rem;
+  }
+}
+
+/***********************/
+/* Breakpoints : 425px */
+/***********************/
+@media screen and (max-width: 425px) {
+  .nav__link {
+    display: none;
+  }
+}
+
+/***********************/
+/* Breakpoints : 320px */
+/***********************/
+@media screen and (max-width: 320px) {
+  .home__middle-line {
+    display: none;
+  }
+
+  .home__image {
+    margin-block-start: 2rem;
+  }
 }
