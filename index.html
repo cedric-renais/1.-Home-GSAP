@@ -18,6 +18,43 @@
     <title>Domaine Feuille de Tonneau</title>
   </head>
   <body>
+    <header>
+      <!---------------->
+      <!-- Navigation -->
+      <!---------------->
+      <nav class="nav">
+        <img
+          src="./sources/svg/barrel.svg"
+          alt="Un tonneau de vin"
+          class="nav__logo nav__logo--barrel"
+        />
+        <div class="nav__container">
+          <a href="#" class="nav__link">Acceuil</a>
+          <a href="#" class="nav__link">Nos vins</a>
+          <a href="#" class="nav__link">Contact</a>
+        </div>
+        <img
+          src="./sources/svg/leaf.svg"
+          alt="logo feuille"
+          class="nav__logo nav__logo--leaf"
+        />
+      </nav>
+      <!---------->
+      <!-- Home -->
+      <!---------->
+      <div class="home">
+        <div class="home__overlay"></div>
+        <video autoplay muted loop class="home__video">
+          <source src="./sources/video/grappe-video.mp4" type="video/mp4" />
+        </video>
+        <div class="home__content">
+          <h1 class="home__title">Vignoble d'exception</h1>
+          <div class="home__middle-line"></div>
+          <img src="./sources/svg/grape.svg" alt="" class="home__image" />
+          <button class="home__button">En savoir plus</button>
+        </div>
+      </div>
+    </header>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="script.js"></script>
   </body>
