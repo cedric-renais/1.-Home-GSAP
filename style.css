@@ -1,0 +1,155 @@
+/*************/
+/* Variables */
+/*************/
+:root {
+  --clr-white: #f1f1f1;
+  --full-size: 100%;
+}
+
+/*********/
+/* Reset */
+/*********/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/***********/
+/* General */
+/***********/
+body {
+  font-family: Antic Slab, sans-serif;
+  background: var(--clr-white);
+}
+
+/**************/
+/* Navigation */
+/**************/
+.nav {
+  position: absolute;
+  top: 0;
+  z-index: 200;
+  inline-size: var(--full-size);
+  block-size: 4.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(80, 13, 80),
+    rgba(238, 130, 238, 0)
+  );
+}
+
+.nav__container {
+  display: flex;
+}
+
+.nav__link,
+.nav__logo,
+.home__title,
+.home__image,
+.home__button {
+  visibility: visible;
+}
+
+.nav__link {
+  color: var(--clr-white);
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-inline: 0.9375rem;
+}
+
+.nav__logo {
+  inline-size: 2.5rem;
+}
+
+.nav__logo--barrel {
+  margin-inline-start: 1.25rem;
+  margin-inline-end: auto;
+}
+
+.nav__logo--leaf {
+  margin-inline-start: auto;
+  margin-inline-end: 1.25rem;
+}
+
+/********/
+/* Home */
+/********/
+.home {
+  inline-size: var(--full-size);
+  block-size: var(--full-size);
+}
+
+.home__overlay {
+  position: absolute;
+  inline-size: var(--full-size);
+  block-size: var(--full-size);
+  background: rgba(0, 0, 0, 0.603);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.home__video {
+  object-fit: cover;
+  inline-size: var(--full-size);
+  block-size: var(--full-size);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home__content {
+  inline-size: 37.5rem;
+  margin-inline: auto;
+  position: relative;
+  top: 9.375rem;
+  color: var(--clr-white);
+  z-index: 150;
+}
+
+.home__title {
+  font-family: Playfair Display, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5.3125rem;
+  line-height: 1.1;
+}
+
+.home__middle-line {
+  block-size: 0;
+  inline-size: 0.125rem;
+  background: var(--clr-white);
+  margin-block: 2.5rem;
+  margin-inline: auto;
+  position: relative;
+}
+
+.home__image {
+  inline-size: 4.6875rem;
+  fill: var(--clr-white);
+  display: block;
+  margin-inline: auto;
+}
+
+.home__button {
+  display: block;
+  font-size: 1.25rem;
+  border: 1px solid var(--clr-white);
+  border-radius: 0.3125rem;
+  background: transparent;
+  color: var(--clr-white);
+  margin-block-start: 3.125rem;
+  margin-inline: auto;
+  padding-block: 1rem;
+  padding-inline: 1.875rem;
+  cursor: pointer;
+}
